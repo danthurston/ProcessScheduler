@@ -4,7 +4,7 @@
 This project is an attempt at improving the prioritization of scheduled processes within a system that uses multiple queues to contain jobs of a specific priority. It currently utilizes a Shortest-Job-First (SJF) approach, iterating through the jobs in each queue.
 
 ## System Issues
-Although the Shortest-Job-First method of scheduling is often shown to be the quickest (A.S., P.B.G., G.G., 2013), when combined with priority scheduling, the main issue it brings is starvation (or long waiting times) in CPU-bound systems. This is caused by two main sources, jobs of __low-priority__n and jobs of __long-length__. 
+Although the Shortest-Job-First method of scheduling is often shown to be the quickest (A.S., P.B.G., G.G., 2013), when combined with priority scheduling, the main issue it brings is starvation (or long waiting times) in CPU-bound systems. This is caused by two main sources, jobs of __low-priority__ and jobs of __long-length__. 
 
 ### Lower-Priority Process Starvation
 A simple method of fixing the starvation of lower-priority processes is to increase the priority of each process if not completed in a certain amount of time. This requires applying __aging__ to each process. This entails processes being passed to the next highest priority queue when reaching a certain age. To implement this, each time a process is completed a method is called to loop over all remaining process and increment their age relative to the time passed (simulated as the bursts preceding it). Once a process passes a certain age threshold it is passed to the next queue. 
