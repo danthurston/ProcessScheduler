@@ -1,7 +1,7 @@
 # Java Process Scheduling System
 
 ## Introduction
-This project is an attempt at improving the prioritization of scheduled processes within a system.  It currently utilizes a Shortest-Job-First (SJF) approach, iterating through multiple queues that contain jobs of specific priorities. The goal is to improve system performance with execution of tasks of varying burst time and to avoid CPU *starvation* or *long waiting times*.
+This project is an attempt at improving the prioritization of scheduled processes within a system.  It currently utilizes a Shortest-Job-First (SJF) approach, iterating through multiple queues that contain jobs of specific priorities. The goal is to improve system performance with execution of tasks of varying burst time and to avoid CPU *starvation* or *long waiting times*. This solution involves applying _weight_ and _age_ to processes to combat starvation.
 
 ## System Issues
 Although SJF scheduling is often shown to be one of the quickest methods, starvation (or excessive wait times) can become an issue when combined with priority scheduling in CPU-bound systems. This is caused by two main sources, jobs of __low-priority__ and jobs of __long-length__ (A.S., P.B.G., G.G., 2013).
