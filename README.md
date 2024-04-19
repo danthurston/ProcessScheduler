@@ -6,10 +6,10 @@ This project is an attempt at improving the prioritization of scheduled processe
 ## System Issues
 Although SJF scheduling is often shown to be one of the quickest methods, starvation (or excessive wait times) can become an issue when combined with priority scheduling in CPU-bound systems. This is caused by two main sources, jobs of __low-priority__ and jobs of __long-length__ (A.S., P.B.G., G.G., 2013).
 
-### - Lower-Priority Process Starvation
+### Lower-Priority Process Starvation
 A simple method of fixing the starvation of lower-priority processes is to increase the priority of each process if not completed in a certain amount of time. This requires applying __aging__ to each process. This entails processes being passed to the next highest priority queue when reaching a certain age. To implement this, each time a process is completed a method is called to loop over all remaining process and increment their age relative to the time passed (simulated as the bursts preceding it). Once a process passes a certain age threshold it is passed to the next queue. 
 
-### - Long Process Starvation 
+### Long Process Starvation 
 Another prevalent issue when utilizing these scheduling methods is that processes requiring long CPU burst times are constantly overtaken by shorter processes within its fixed-priority queue. This means long processes are slow to be dealt with or are never completed. 
 An elegant solution to this issue is adding _weight_ to each process. This is known as **weighted-shortest-job-first** and is an adaptation of agile methodologies being applied to CPU scheduling. This would ideally be implemented using an algorithm that uses the processes burst and age. The calculation would result in processes that are over a certain weight being moved further up their respective priority queues as they age. 
 
