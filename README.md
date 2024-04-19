@@ -20,4 +20,4 @@ As the original method of shortest-job-first is commonly cited as one of the mos
 
 
 ## References
-Silberchatz, A., Galvin, P.B., and Gagne, G. - 2013. CPU Scheduling. University of Illinois Chicago. [ONLINE]. Available from: https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6_CPU_Scheduling.html. [28 March 2019]
+Silberchatz, A., Galvin, P.B., and Gagne, G. - 2013. CPU Scheduling. University of Illinois Chicago. [ONLINE]. Available from: [https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6_CPU_Scheduling.html](https://www2.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/6_CPU_Scheduling.html). [28 March 2019]
